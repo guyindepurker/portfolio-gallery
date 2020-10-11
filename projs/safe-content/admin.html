@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-admin.css">
+    <title>Admin Page</title>
+</head>
+<body onload="initAdmin()">
+    <section class="style-section admin-section content">
+        <img src="imgs/admin.png" />
+        <h1>Welcom back admin!</h1>
+        <button class="submit-btn Logout" onclick="onLogoutAdmin()">Logout</button>
+        <button class="submit-btn Logout" onclick="onGoBack()">back</button>
+        <section class="filter-continer">
+            <h2>Filter:</h2>
+            <select class="filter-list" onchange="onSetFilter(this.value)">
+                <option value="LAST-LOGIN">Last login</option>
+                <option value="NAME">Name</option>
+            </select>
+        </section>
+        <div class="users-continer">
+            <h3>List of the users:</h3>
+            <table class="users-tb">
+                <thead>
+                    <th>userName</th>
+                    <th>password</th>
+                    <th>lastLoginTime</th>
+                    <th>isAdmin</th>
+                </thead>
+                <tbody class="users-list-tb">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+ <script src="js/services/content-service.js"></script>   
+ <script src="js/services/admin-service.js"></script>
+ <script src="js/admin-controller.js"></script>
+ <script src="js/content-controller.js"></script>
+</body>
+</html>

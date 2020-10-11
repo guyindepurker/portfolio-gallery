@@ -24,6 +24,7 @@ function createProjects(){
     projects.push(createProject('guessme','GuessMe','Think about someone','Cool game that the computer guess your choice'))
     projects.push(createProject('easy','Easy','Build your site','i create a website using bootstrap for company that building sites'))
     projects.push(createProject('tindog','Tindog','A Website for app tindog','i create a website using bootstrap for app tindog this is like tinder of the pets!'))
+    projects.push(createProject('safe-content','Login site','A simple Website to login','i create a website using bootstrap for all the client that use my service do a login app that i can convert to any client!'))
     return projects;
 }
 
@@ -35,6 +36,6 @@ function createProject(id,name,title,desc){
         desc,
         url:`projs/${id}`,
         publishedAt:Date.now(),
-        labels:['HTML5','JS','CSS3','BOOTSRAP4']
+        labels:['HTML5','JS6','CSS3','BOOTSRAP4']
     }
 }

@@ -40,11 +40,10 @@ function renderModal(project){
     var htmlStr = `
     <h2>${project.name}</h2>
     <p class="item-intro text-muted">${project.title}.</p>
-    <img class="img-fluid d-block mx-auto" src="img/proj-imgs/${project.id}.png" alt="">
+    <img class="img-fluid d-block mx-auto img-modal" src="img/proj-imgs/${project.id}.png" alt="">
     <p>${project.desc}</p>
     <ul class="list-inline">
       <li>Date: ${time}</li>
-      <li>Url: ${project.url}</li>
       <li class="catProj">Category: <span>${project.labels.toString()} </span></li>
     </ul>
     <button class="btn btn-outline-warning" onclick="window.open('/${project.url}','_blank')">See The Project</button>

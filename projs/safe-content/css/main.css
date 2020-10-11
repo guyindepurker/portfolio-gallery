@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.style-section{
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.login h1{
+    font-size: 4em;
+}
+label {
+    display: block;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    font-size:1rem;
+    margin-bottom: 5px;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}
+
+#username ,#pass{
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 8px 45px;
+    font-size: 15px;
+    transition-duration: 0.3s;
+}
+#username:focus ,#pass:focus{
+    
+    background-color: rgb(208, 208, 208);
+}
+.submit-btn {
+    transition-duration: 0.3s;
+    cursor: pointer;
+    padding: 10px 100px;
+    background-color: rgb(128, 211, 92);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.submit-btn:hover{
+    background-color: rgb(140, 238, 196);
+    border: 1px solid black;
+}
+.hide{
+    display: none;
+}
+img[src*="enter"]{
+    display: block;
+    margin: 10px auto;
+}
+.Logout{
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(182, 0, 0);
+    color: white;
+}
+.Logout:hover{
+    background-color: rgb(123, 69, 69);
+}
+ a{
+    transition-duration: 0.3s;
+     margin: 10px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+a:hover{
+color: teal;
+text-decoration: underline;
+}

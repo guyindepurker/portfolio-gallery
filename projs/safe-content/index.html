@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Safe content</title>
+</head>
+<body onload="init()">
+    <section class="style-section login">
+        <h1>Sign in</h1>
+        <img src="imgs/login-image.png"/>
+        <div class="user-name">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your User Name">
+        </div>
+        
+        <div class="pass-word">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="password" placeholder="Enter Your Password"
+                   minlength="8" required>
+        </div>
+        
+        <input class ="submit-btn" onclick="onCheckLogin()" type="submit" value="Sign in">
+
+    </section>
+    <section class="style-section secret-page">
+    </section>
+
+
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+ <script src="js/services/content-service.js"></script>   
+ <script src="js/content-controller.js"></script>
+</body>
+</html>

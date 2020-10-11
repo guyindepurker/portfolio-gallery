@@ -771,3 +771,19 @@ fieldset[disabled] .btn-xl:hover {
 .btn-submit{
     cursor: pointer;
 }
+.img-proto{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+.img-modal{
+    border: 2px solid #ffc107;
+    border-radius:5px ;
+    width: 600px;
+    /* margin: 5px; */
+    box-shadow: 0px 0px 1px 1px black;
+}
+
+p{
+    text-transform: capitalize;
+}

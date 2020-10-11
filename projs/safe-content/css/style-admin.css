@@ -1,0 +1,43 @@
+@import 'main.css';
+body{
+    margin: 0;
+}
+h1{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: tomato;
+    margin-top: 5px;
+    /* background-color: rgb(208, 196, 196); */
+}
+img{
+    width: 300px;
+}
+.admin-section{
+    margin-top: 2%;
+}
+table{
+    margin: 5px auto;
+}
+th,td{
+    border: 1px solid black;
+    padding: 5px;
+}
+th{
+    background-color: rgb(191, 78, 78);
+    color: blanchedalmond;   
+}
+td{
+    background-color: rgb(203, 190, 95);
+}
+
+.filter-continer{
+    background-color: rgb(2, 151, 167);
+    padding: 10px;
+    width: 100%;
+   color: white;
+}
+.filter-list{
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
