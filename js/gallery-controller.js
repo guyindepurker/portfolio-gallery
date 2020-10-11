@@ -4,9 +4,9 @@ function initPage() {
 }
 
 function onSubmit(subject,text,name){
-    var $elSubject = $('#'+subject).val() + ' - ' + $('#'+name).val();
-    var $elMessage = $('#'+text).val()
-    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=guy235@gmail.com&su=${$elSubject}&body=${$elMessage}`,'_blank');
+    var Subject = $('#'+subject).val() + ' - ' + $('#'+name).val();
+    var Message = $('#'+text).val()
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=guy235@gmail.com&su=${Subject}&body=${Message}`,'_blank');
 }
 
 function renderPtotfolio (){
@@ -29,6 +29,7 @@ function renderPtotfolio (){
     });
     $('.projects-proto').html(htmlStr.join(''));
 }
+
 function onOpenModal(projId){
     var project = getProjectById(projId);
     renderModal(project)
