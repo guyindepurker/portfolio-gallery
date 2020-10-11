@@ -200,6 +200,7 @@ header.masthead {
     -o-background-size: cover;
     background-size: cover;
 }
+
 header.masthead .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
@@ -565,7 +566,10 @@ header.masthead .intro-text .intro-heading {
 .team-member img {
     width: 225px;
     height: 225px;
-    border: 7px solid white;
+    border: 7px solid rgb(50, 50, 50);
+    box-shadow: 0px 0px 1px 1px black;
+    object-fit: cover;
+
 }
 .team-member h4 {
     margin-top: 25px;
@@ -780,10 +784,12 @@ fieldset[disabled] .btn-xl:hover {
     border: 2px solid #ffc107;
     border-radius:5px ;
     width: 600px;
-    /* margin: 5px; */
     box-shadow: 0px 0px 1px 1px black;
 }
 
 p{
     text-transform: capitalize;
+}
+.catProj span {
+    font-weight: bolder;
 }

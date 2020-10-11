@@ -11,6 +11,7 @@ function getProjectById(projectId){
     return project;
 }
 
+
 function createProjects(){
     var projects = [];
     projects.push(createProject('minesweeper','Minesweeper','Minesweeper Game - Dont open Mine!','Minesweeper is like the original game,I adding Cool Features '))
@@ -27,6 +28,7 @@ function createProjects(){
     projects.push(createProject('safe-content','Login site','A simple Website to login','i create a website using bootstrap for all the client that use my service do a login app that i can convert to any client!'))
     return projects;
 }
+
 
 function createProject(id,name,title,desc){
     return  {
