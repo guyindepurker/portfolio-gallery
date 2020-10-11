@@ -1,0 +1,76 @@
+body{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(165, 98, 98);
+    margin: 0;
+    text-transform: capitalize;
+text-align: center;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: bisque;
+    padding-top: 50px;
+    letter-spacing: 1px;
+}
+img{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.content {
+    border: 2px solid lightsalmon;
+    height: 500px;
+    width: 500px;
+    /* background-color: #fff; */
+   margin: auto;
+}
+.questions {
+    color:white;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: rgb(55, 128, 150);
+    margin: 10px;
+    padding: 10px;
+    border-radius:10px ;
+    font-size: 15px;
+}
+.questions:hover{
+    background-color: rgb(105, 161, 171);
+    cursor: pointer;
+}
+.victory{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+
+}
+.victory img {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.victory button {
+    display:  block;
+    color: white;
+    background-color: rgb(95, 153, 205);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.victory button:hover{
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    background-color: white;
+    color: black;
+   
+}

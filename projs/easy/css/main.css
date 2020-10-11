@@ -1,0 +1,50 @@
+body{
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+}
+.logo-title{
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+.font-nav{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+
+}
+.carousel-inner{
+    text-transform: capitalize;
+}
+.carousel-inner img{
+    filter: brightness(50%);
+    height: 600px;
+}
+footer {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+margin-top: 20px;
+}
+.feature-box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.icon-box{
+    font-size: 3rem;
+    margin-bottom: 5px;
+    color: rgb(255, 208, 56);
+}
+.title-feature{
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contect-form{
+    margin: 20px auto;
+width: 60vh;
+}
+.pricing{
+    min-width: 80%;
+}
+.about-us-pic img{
+    height: 200px;
+    width: 200px;
+}

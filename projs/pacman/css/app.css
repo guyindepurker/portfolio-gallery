@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+  color:white;
+ text-align: center;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
+
+.modal {
+  background-color: rgb(210, 210, 51);
+  display:none;
+  top:100px;
+margin: auto;
+text-align: center;
+  width: 50%;
+  padding: 10px;
+}
+
+button.restart-game{
+  display: none;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: rgb(56, 96, 82);
+  background-color: rgb(220, 209, 209);
+  border:none;
+  margin:0 auto;
+}
+button.restart-game:hover{
+  background-color: rgb(56, 96, 82);
+  color: rgb(220, 209, 209);
+  cursor: pointer;
+}
+.victory{
+  display: none;
+font-size: 25px;
+padding: 10px;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bolder;
+letter-spacing: 2px;
+color:white;
+margin: 5px;
+}

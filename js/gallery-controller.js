@@ -9,7 +9,7 @@ function renderPtotfolio (){
     var projects = getProjects();
     var htmlStr = projects.map(function(project){
         return `        <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1" onclick="onOpenModal(${project})">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1" onclick="onOpenModal('${project.id}')">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="fa fa-plus fa-3x"></i>
@@ -25,12 +25,13 @@ function renderPtotfolio (){
     });
     document.querySelector('.projects-proto').innerHTML = htmlStr.join('');
 }
-function onOpenModal(proj){
-    renderModal(proj)
+function onOpenModal(projId){
+    var project = getProjectById(projId);
+    renderModal(project)
 }
 
 function renderModal(project){
-    var time = new Date(project.time).toLocaleDateString('he');
+    var time = new Date(project.publishedAt).toLocaleDateString('he');
     var htmlStr = `
     <h2>${project.name}</h2>
     <p class="item-intro text-muted">${project.title}.</p>
@@ -39,7 +40,7 @@ function renderModal(project){
     <ul class="list-inline">
       <li>Date: ${time}</li>
       <li>Url: ${project.url}</li>
-      <li>Category: ${project.labels.toString()}</li>
+      <li class="catProj">Category: <span>${project.labels.toString()} </span></li>
     </ul>
     <button class="btn btn-outline-warning" onclick="window.location.href='/${project.url}'">See The Project</button>
     <button class="btn btn-primary" data-dismiss="modal" type="button">

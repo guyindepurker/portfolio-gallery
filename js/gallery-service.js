@@ -6,6 +6,13 @@ function getProjects() {
     return gProjects;
 }
 
+function getProjectById(projectId){
+    var project = gProjects.find(function (project){
+        return project.id === projectId;
+         
+    })
+    return project;
+}
 
 function createProjects(){
     var projects = [];
