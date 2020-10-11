@@ -47,7 +47,7 @@ function renderModal(project){
       <li>Client: Coding Academy</li>
       <li class="catProj">Category: <span>${project.labels.toString()} </span></li>
     </ul>
-    <button class="btn btn-outline-warning" onclick="window.open('portfolio-gallery/${project.url}','_blank')">View The Project</button>
+    <button class="btn btn-outline-warning" onclick="window.open('${project.url}','_blank')">View The Project</button>
     <button class="btn btn-primary" data-dismiss="modal" type="button">
       <i class="fa fa-times"></i>
       Close Project</button>
