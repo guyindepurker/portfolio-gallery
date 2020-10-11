@@ -1,6 +1,8 @@
 console.log('work');
 
-
+function initPage() {
+    renderPtotfolio ()
+}
 
 
 function renderPtotfolio (){
