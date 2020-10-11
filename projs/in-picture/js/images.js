@@ -45,7 +45,7 @@ function renderVictory(){
 }
 function renderQuest(quests){
         var htmlStr = '';
-        htmlStr = '<img src="/img/'+(gCurrQuestIdx+1)+'.jpg">'
+        htmlStr = '<img src="img/'+(gCurrQuestIdx+1)+'.jpg">'
         for(var i=0; i<quests[0].opts.length; i++){
         htmlStr += '<div onclick="checkAnswer('+(i)+')" class="questions qus'+(i)+'">'+quests[gCurrQuestIdx].opts[i]+'</div>'
         }
