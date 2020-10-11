@@ -9,7 +9,7 @@ function renderPtotfolio (){
     var projects = getProjects();
     var htmlStr = projects.map(function(project){
         return `        <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="${project.url}">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1" onclick="onOpenModal(${project})">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="fa fa-plus fa-3x"></i>
@@ -24,4 +24,27 @@ function renderPtotfolio (){
       </div>`
     });
     document.querySelector('.projects-proto').innerHTML = htmlStr.join('');
+}
+function onOpenModal(proj){
+    renderModal(proj)
+}
+
+function renderModal(project){
+    var time = new Date(project.time).toLocaleDateString('he');
+    var htmlStr = `
+    <h2>${project.name}</h2>
+    <p class="item-intro text-muted">${project.title}.</p>
+    <img class="img-fluid d-block mx-auto" src="img/proj-imgs/${project.id}.png" alt="">
+    <p>${project.desc}</p>
+    <ul class="list-inline">
+      <li>Date: ${time}</li>
+      <li>Url: ${project.url}</li>
+      <li>Category: ${project.labels.toString()}</li>
+    </ul>
+    <button class="btn btn-outline-warning" onclick="window.location.href='/${project.url}'">See The Project</button>
+    <button class="btn btn-primary" data-dismiss="modal" type="button">
+      <i class="fa fa-times"></i>
+      Close Project</button>
+    `
+    $('.modal-body').html(htmlStr);
 }
