@@ -1,7 +1,4 @@
 var gProjects = createProjects();
-
-
-
 function getProjects() {
     return gProjects;
 }
@@ -38,6 +35,6 @@ function createProject(id,name,title,desc){
         desc,
         url:`projs/${id}`,
         publishedAt:Date.now(),
-        labels:['HTML5','JS','CSS3']
+        labels:['HTML5','JS','CSS3','BOOTSRAP4',]
     }
 }

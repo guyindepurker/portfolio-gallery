@@ -1,9 +1,13 @@
-console.log('work');
 
 function initPage() {
     renderPtotfolio ()
 }
 
+function onSubmit(subject,text,name){
+    var $elSubject = $('#'+subject).val() + ' - ' + $('#'+name).val();
+    var $elMessage = $('#'+text).val()
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=guy235@gmail.com&su=${$elSubject}&body=${$elMessage}`,'_blank');
+}
 
 function renderPtotfolio (){
     var projects = getProjects();
@@ -23,7 +27,7 @@ function renderPtotfolio (){
         </div>
       </div>`
     });
-    document.querySelector('.projects-proto').innerHTML = htmlStr.join('');
+    $('.projects-proto').html(htmlStr.join(''));
 }
 function onOpenModal(projId){
     var project = getProjectById(projId);
