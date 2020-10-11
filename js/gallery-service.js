@@ -2,7 +2,7 @@ var gProjects = createProjects();
 
 
 
-function getProjects {
+function getProjects() {
     return gProjects;
 }
 
